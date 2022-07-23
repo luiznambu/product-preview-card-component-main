@@ -1,0 +1,80 @@
+.card {
+    margin: 0;
+    position: absolute;
+    top: 50%;                          // centralizando o cartao na pagina
+    left: 50%;              
+    transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
+    background-color: white;
+    height: 450px;
+    width: 600px;
+    overflow: hidden;
+
+    @include breakpoint-down(tablet) {
+        height: 610px;
+        width: 345px;
+    }
+
+    &__grid {
+        height: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include breakpoint-down(tablet) {
+            display: block;
+            grid-template-rows: 3fr 6fr;
+        }
+    }
+
+    &__image {
+        height: 450px;
+        position: relative;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include breakpoint-down(tablet) {
+            height: 240px;
+            margin: auto;
+        }
+    }
+
+    &__product {
+        letter-spacing: 0.3125rem; //5px
+        margin-bottom: 1.5625rem; //25px
+
+        @include breakpoint-down(tablet) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-down(tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__description {
+        line-height: 1.5;
+        align-items: space-between;
+        margin-bottom: 25px; //35px
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 1.875rem;
+
+        h1 {
+            color: $Darkcyan;
+        }
+
+        @include breakpoint-down(tablet) {
+            margin-bottom: 20px;
+        }
+    }
+}    

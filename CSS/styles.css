@@ -1,0 +1,132 @@
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
+
+.container {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (max-width: 63.9375em) {
+  .container {
+    padding-top: 26px;
+    padding-right: 25px;
+    padding-left: 24px;
+  }
+}
+
+h1 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "fraunces", serif;
+  font-size: 32px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+  width: 240px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: hsl(158deg, 36%, 37%);
+  transition: background-color 150ms ease-in-out;
+}
+.btn:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+@media (max-width: 63.9375em) {
+  .btn {
+    width: 264px;
+  }
+}
+
+.card {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.625rem;
+  background-color: white;
+  height: 450px;
+  width: 600px;
+  overflow: hidden;
+}
+@media (max-width: 63.9375em) {
+  .card {
+    height: 610px;
+    width: 345px;
+  }
+}
+.card__grid {
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 63.9375em) {
+  .card__grid {
+    display: block;
+    grid-template-rows: 3fr 6fr;
+  }
+}
+.card__image {
+  height: 450px;
+  position: relative;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 63.9375em) {
+  .card__image {
+    height: 240px;
+    margin: auto;
+  }
+}
+.card__product {
+  letter-spacing: 0.3125rem;
+  margin-bottom: 1.5625rem;
+}
+@media (max-width: 63.9375em) {
+  .card__product {
+    margin-bottom: 13px;
+  }
+}
+.card__title {
+  margin-bottom: 1.875rem;
+}
+@media (max-width: 63.9375em) {
+  .card__title {
+    margin-bottom: 20px;
+  }
+}
+.card__description {
+  line-height: 1.5;
+  align-items: space-between;
+  margin-bottom: 25px;
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1.875rem;
+}
+.card__price h1 {
+  color: hsl(158deg, 36%, 37%);
+}
+@media (max-width: 63.9375em) {
+  .card__price {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
