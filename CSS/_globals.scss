@@ -44,6 +44,7 @@ h1 {
     transition: background-color 150ms ease-in-out;
 
     &:hover {
+        cursor: pointer;
         background-color: hsl(212, 21%, 14%);
     }
 

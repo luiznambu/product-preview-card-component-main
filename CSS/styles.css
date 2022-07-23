@@ -43,6 +43,7 @@ h1 {
   transition: background-color 150ms ease-in-out;
 }
 .btn:hover {
+  cursor: pointer;
   background-color: hsl(212deg, 21%, 14%);
 }
 @media (max-width: 63.9375em) {
