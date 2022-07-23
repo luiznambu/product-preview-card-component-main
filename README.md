@@ -1,4 +1,6 @@
 # Frontend Mentor - Product preview card component
+Este foi um projeto criado a partir dos desafios do site frontendmentor <br>
+A aplicação realizada pode ser acessada aqui: nambu-product-review.netlify.app
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
